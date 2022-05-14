@@ -20,7 +20,6 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          extensions: fileinfo, pdo_mysql
 
       - name: Check if composer.json exists
         id: check_files
@@ -57,5 +56,5 @@ jobs:
         with:
           app-name: 'newwgconline'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E2672DD9BDB748FDB96698232F138187 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B55EF2B80F124DDFBDC2CABF8EA62504 }}
           package: .
